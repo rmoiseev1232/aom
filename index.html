@@ -590,6 +590,90 @@
     .section { page-break-inside: avoid; }
     @page { margin: 0; size: A4; }
   }
+
+  /* MOBILE — до 480px */
+  @media (max-width: 480px) {
+    body { font-size: 13px; }
+
+    .cover { padding: 28px 20px; min-height: auto; gap: 36px; }
+    .cover-title { font-size: 26px; }
+    .cover-subtitle { font-size: 14px; }
+    .cover-stats { gap: 20px; flex-wrap: wrap; }
+    .cover-stat-num { font-size: 26px; }
+    .cover-logo img { height: 38px; }
+    .cover-logo-text { font-size: 15px; }
+    .cover-footer { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .cover-toc { flex-wrap: wrap; gap: 5px; }
+    .cover-toc-item { font-size: 10px; }
+
+    .page { padding: 20px 16px; }
+    .part-header { padding: 20px 16px; margin: 0 -16px 24px; gap: 12px; }
+    .part-number { width: 40px; height: 40px; font-size: 18px; border-radius: 10px; }
+    .part-title-block h2 { font-size: 18px; }
+    .part-title-block p { font-size: 12px; }
+
+    .section { margin-bottom: 28px; }
+    .section-title { font-size: 14px; }
+
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 12px; }
+    thead th, tbody td { padding: 7px 9px; white-space: nowrap; }
+
+    .metrics-grid,
+    .metrics-grid-3 { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .metric-num { font-size: 22px; }
+
+    .quote-grid,
+    .objection-grid,
+    .portrait-grid { grid-template-columns: 1fr; }
+
+    .psychotype-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .psychotype-pct { font-size: 22px; }
+
+    .pattern-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .bar-item { flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+    .bar-label { width: 100%; font-size: 12px; }
+    .bar-track { flex: 1; min-width: 80px; height: 8px; }
+    .bar-val { width: auto; font-size: 11px; }
+
+    .trigger-item { flex-wrap: wrap; padding: 12px; }
+    .trigger-strength { margin-top: 6px; }
+
+    .insight-box { padding: 16px; }
+    .insight-box h4 { font-size: 14px; }
+    .insight-box p, .insight-box li { font-size: 12px; }
+
+    .report-footer { flex-direction: column; gap: 10px; }
+    .report-footer img { display: none; }
+  }
+
+  /* TABLET — 481px до 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    body { font-size: 13px; }
+
+    .cover { padding: 40px 36px; min-height: auto; }
+    .cover-title { font-size: 34px; }
+    .cover-subtitle { font-size: 15px; }
+    .cover-footer { flex-direction: column; gap: 12px; align-items: flex-start; }
+
+    .page { padding: 32px 28px; }
+    .part-header { padding: 28px; margin: 0 -28px 32px; }
+    .part-title-block h2 { font-size: 22px; }
+
+    .metrics-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .metrics-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+    .psychotype-grid { grid-template-columns: 1fr 1fr; }
+
+    .quote-grid,
+    .objection-grid { grid-template-columns: 1fr 1fr; }
+    .portrait-grid { grid-template-columns: 1fr 1fr; }
+
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    .bar-item { flex-wrap: wrap; }
+    .bar-label { width: 100%; font-size: 12px; }
+    .bar-track { flex: 1; }
+  }
 </style>
 </head>
 <body>
